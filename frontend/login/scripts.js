@@ -22,7 +22,10 @@ document.getElementById('loginForm').addEventListener('submit',async function(ev
 
         if (response.ok) {
             const data = await response.text();
-            window.location.href = "/Home/home.html";   
+           
+            const event = new CustomEvent('formDataReady', {detail: {loginData, source : "Login"}});
+            document.dispatchEvent(event);
+            // window.location.href = "/Home/home.html";   
         } else {
             const error = await response.text();
             console.error('Login failed:', error);

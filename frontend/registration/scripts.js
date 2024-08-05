@@ -82,7 +82,9 @@ document.getElementById('loginForm').addEventListener('submit', async function(e
         });
         if (response.ok) {
             const data = await response.text();
-            window.location.href = "/login/login.html";   
+            const event = new CustomEvent('formDataReady', {detail: {userData, source : "registration"}});
+            document.dispatchEvent(event);
+            // window.location.href = "/login/login.html";   
         } else {
             const error = await response.text();
             console.error('Registration failed:', error);
