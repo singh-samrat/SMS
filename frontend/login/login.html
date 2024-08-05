@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css" integrity="sha512-T584yQ/tdRR5QwOpfvDfVQUidzfgc2339Lc8uBDtcp/wYu80d7jwBgAxbyMh0a9YM9F8N3tdErpFI8iaGx6x5g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preload" href="style.css" as="style">
+        <link rel="preload" href="scripts.js" as="script">
+    <title>Login-SMS</title>
+    </head>
+    <body>
+        <div class = "background-blur">
+            
+            <div class = "container position-relative">
+                <div class = "row">
+                    <div class = "col-md-6">
+                        <div class = "login">
+                            <div class = "brand-div">
+                                <div class = "brand-pic">
+                                    <img class = "brand-pic-img" src = "/assets/pics/batman-silhouette.png">
+                                </div>
+                                <h3 class = "brand">Samrat</h3>
+                            </div>
+                            <div class = "greeting">
+                                <h1 class = "greeting-header">Welcome Back!</h1>
+                            </div>
+                            <p class = "text-muted">Please enter your details</p>
+                            <div class = "login-container ">
+                                <div class = "row">
+                                    <div class = "col-md-4 col-sm-12 mb-3">
+                                        <div class = "box">
+                                            <img src = "/assets/pics/google.png" class = "box-pic" alt = "Google">
+                                        </div>
+                                    </div>
+                                    <div class = "col-md-4 col-sm-12 mb-3">
+                                        <div class = "box">
+                                            <img src = "/assets/pics/facebook.png" class = "box-pic" alt = "Facebook">
+                                        </div>
+                                    </div>
+                                    <div class = "col-md-4 col-sm-12 mb-3">
+                                        <div class = "box">
+                                            <img src = "/assets/pics/apple-logo.png" class = "box-pic" alt = "Apple">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="divider-container text-center">
+                                <hr class = "divider">
+                                <span class = "divider-text">or</span>
+                            </div>
+        
+                            <form class="login-form mt-4" id = "loginForm" method = "POST" action = "login.php">
+                                <div class="form-group">
+                                    <label for="email">Email Address</label><br>
+                                    <input class = "textfield" type = "text" name = "email" id = "email">
+                                </div>
+                                <div class = "form-group">
+                                    <label for="password">Password</label>
+                                    <input class = "textfield" type = "password" name = "password" id = "password">
+                                </div>
+                                <div class = "form-group d-flex align-items-center">
+                                    <div class = "checkbox-div">
+                                        <input type = "checkbox" id="remember-me" class = "mr-2" name = "remember">
+                                    </div>
+                                    <div class = "remember-label">
+                                        <label for = "remember-me">Remember me</label>
+                                    </div>
+                                    <div class = "forgot-password">
+                                        <a href="#" class = "forgot ml-auto">Forgot Password?</a>
+                                    </div> 
+                                </div>
+                                <button type = "submit" class = "btn btn-primary" id = "submit" name = "submit">Sign In</button><br><br>
+                                <a href = "/registration/registration.html" class = "member ml-auto">Not a Member?</a>
+                            </form>
+                        </div>
+                    </div>
+                    
+                        <div class = "col-md-6">
+                            <div class = "login-picture">
+                                <img src="/assets/pics/woman.jpg" class = "right-pic">
+                            </div>
+                        </div>
+                        
+                </div>
+            </div>
+        </div>
+        
+        <script src = "scripts.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/js/bootstrap.min.js" integrity="sha512-UR25UO94eTnCVwjbXozyeVd6ZqpaAE9naiEUBK/A+QDbfSTQFhPGj5lOR6d8tsgbBk84Ggb5A3EkjsOgPRPcKA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    </body>
+</html>
